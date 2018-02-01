@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple">
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/trainimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@mipmap/rlogo"
+        android:textColor="#fff"
+
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextStationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:layout_below="@+id/trainimage"
+        android:hint="Enter Station code"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerHours"
+        android:layout_below="@+id/editTextStationCode"
+        android:layout_margin="15dp"
+        android:layout_alignStart="@+id/btnAShow"
+        android:layout_alignEnd="@+id/btnAShow"
+        android:textColor="#fff">
+
+    </Spinner>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Arrivals"
+        android:id="@+id/btnAShow"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spinnerHours"
+        android:textColor="@color/purple"
+        android:background="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:radius="10dp"
+        >
+
+    </Button>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+
+            >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:text="@string/stn"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            />
+
+            <TextView
+                android:id="@+id/stationOutput"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Output"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+           android:layout_width="150dp"
+           android:layout_height="20dp"
+           android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="30dp"
+            android:layout_height="20sp"
+            android:text="Sch: "
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            />
+         <TextView
+             android:id="@+id/outputSchedule"
+             android:layout_width="30dp"
+             android:layout_height="20dp"
+             android:text="Output"
+             android:paddingLeft="10dp"
+             android:textStyle="bold"
+             />
+          <TextView
+              android:id="@+id/tv3"
+              android:layout_width="40dp"
+              android:layout_height="20dp"
+              android:text="Actual: "
+              android:paddingLeft="10dp"
+              android:textStyle="bold"
+              />
+            <TextView
+                android:id="@+id/outputActual"
+                android:layout_width="50dp"
+                android:layout_height="20sp"
+                android:text="Output"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                />
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="20sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="40dp"
+                android:layout_height="20sp"
+                android:text="Arrived: "
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/outputArrived"
+                android:layout_width="30dp"
+                android:layout_height="20sp"
+                android:text="Output"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tv5"
+                android:text="Departed: "
+                android:layout_width="60dp"
+                android:layout_height="20sp"
+                android:layout_toEndOf="@+id/outputArrived"
+                android:layout_toRightOf="@+id/outputArrived"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/outputDeparted"
+                android:layout_width="30dp"
+                android:layout_height="20sp"
+                android:layout_toEndOf="@+id/tv5"
+                android:layout_toRightOf="@+id/tv5"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange">
+
+    <ImageView
+        android:id="@+id/trainimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        app:srcCompat="@mipmap/rlogo" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPNR"
+        android:layout_below="@+id/trainimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="PNR Number"
+        android:inputType="number"
+        android:ems="10"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PNR Status"
+        android:id="@+id/btnShow"
+        android:layout_below="@+id/editTextPNR"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/orange"
+        android:background="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:radius="10dp"
+        />
+
+</RelativeLayout>

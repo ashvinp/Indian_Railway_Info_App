@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:elevation="6dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/rlogo"
+            android:id="@+id/imgIcon"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Train Code: "
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgIcon"
+            android:layout_toRightOf="@+id/imgIcon"
+            android:id="@+id/txtTcode"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/txtTcode"
+            android:layout_toRightOf="@+id/txtTcode"
+            android:id="@+id/txtTrainNumber"
+            android:hint="t code"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgIcon"
+            android:layout_toRightOf="@+id/imgIcon"
+            android:layout_below="@+id/txtTcode"
+            android:text="Train: "
+            android:id="@+id/txtTname"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/txtTname"
+            android:layout_toRightOf="@+id/txtTname"
+            android:id="@+id/txtTrainName"
+            android:layout_below="@+id/txtTcode"
+            android:hint="t name"
+            android:layout_marginTop="5dp"
+            ></TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/imgIcon"
+            android:text="Actual Departure: "
+            android:id="@+id/txtAdeparture"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtAdeparture"
+            android:layout_toRightOf="@+id/txtAdeparture"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/imgIcon"
+            android:id="@+id/txtActdep"
+            android:hint="actdep"
+            android:paddingLeft="10dp"
+            ></TextView>
+
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAdeparture"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Scheduled Arrival: "
+            android:id="@+id/txtSarr"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/txtAdeparture"
+            android:layout_toEndOf="@+id/txtSarr"
+            android:layout_toRightOf="@+id/txtSarr"
+            android:id="@+id/txtScharr"
+            android:hint="scharr"
+            ></TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/txtSarr"
+                android:text="Delayed Arrival: "
+                android:id="@+id/txtDarr"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txtDarr"
+                android:layout_toRightOf="@+id/txtDarr"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/txtSarr"
+                android:id="@+id/txtDelayarr"
+                android:hint="actdep"
+                android:paddingLeft="10dp"
+                ></TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDarr"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Actual Arrival: "
+                android:id="@+id/txtAarr"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/txtDarr"
+                android:layout_toEndOf="@+id/txtAarr"
+                android:layout_toRightOf="@+id/txtAarr"
+                android:id="@+id/txtActarr"
+                android:hint="actarr"
+                ></TextView>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/txtAarr"
+                android:text="Delay Departure: "
+                android:id="@+id/txtDdep"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txtDdep"
+                android:layout_toRightOf="@+id/txtDdep"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/txtAarr"
+                android:id="@+id/txtDelaydep"
+                android:hint="delaydep"
+                android:paddingLeft="10dp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDdep"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Scheduled Departure: "
+                android:id="@+id/txtSdep"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/txtDdep"
+                android:layout_toEndOf="@+id/txtSdep"
+                android:layout_toRightOf="@+id/txtSdep"
+                android:id="@+id/txtSchdep"
+                android:hint="schdep"
+                ></TextView>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

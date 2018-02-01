@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/TrainCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TrainName"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/TrainName"
+            android:layout_weight="1"
+            android:text="Train Code"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/TrainName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TrainCode"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="28dp"
+            android:text="Train Name" />
+        <TextView
+            android:id="@+id/RescheduleDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TrainName"
+            android:layout_alignStart="@+id/TrainName"
+            android:layout_below="@+id/TrainName"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="28dp"
+            android:text="Reschedule Date" />
+        <TextView
+            android:id="@+id/RescheduleTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/RescheduleDate"
+            android:layout_alignStart="@+id/RescheduleDate"
+            android:layout_below="@+id/RescheduleDate"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="28dp"
+            android:text="Reschedule Time" />
+        <TextView
+            android:id="@+id/DestinationStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/RescheduleTime"
+            android:layout_alignStart="@+id/RescheduleTime"
+            android:layout_below="@+id/RescheduleTime"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="28dp"
+            android:text="Destination Station" />
+        <TextView
+            android:id="@+id/SourceStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DestinationStation"
+            android:layout_alignStart="@+id/DestinationStation"
+            android:layout_below="@+id/DestinationStation"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="28dp"
+            android:text="Source Station" />
+        <TextView
+            android:id="@+id/TimeDifference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/SourceStation"
+            android:layout_alignStart="@+id/SourceStation"
+            android:layout_below="@+id/SourceStation"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="10dp"
+            android:text="Time Difference" />
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>
